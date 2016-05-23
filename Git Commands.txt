@@ -1,4 +1,5 @@
 cd ~     //move to home directory
+cd ..     //moving one folder up
 clear     //clear screen
 ls     //show files and folders in the current directory
 ls -la     //show files and folders in the current directory + hidden

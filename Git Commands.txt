@@ -1,22 +1,24 @@
-cd ~
-clear
-ls
-ls -la
-git config --global user.name 'firstName lastName'
-git config --global user.email 'eMail'
-git config --list
-git config propertyName
-git init
-git add 'fileName'
-git status
-git commit -m 'commitMessage'
-git commit -am 'commitMessage'
-git log
-git rm 'fileName'
-git mv 'fileName1' 'fileName2 or folderName or folderName/someOtherName'
-git checkout -- 'fileName'  //undo, if modified
-git reset HEAD 'fileName'   //unstaging
-git checkout commitNumber -- 'fileName'
-git remote add 'nickName' 'URLofTheRepo'
-git remote
-git push -u 'nickName' master
+cd ~     //move to home directory
+clear     //clear screen
+ls     //show files and folders in the current directory
+ls -la     //show files and folders in the current directory + hidden
+git config --global user.name 'firstName lastName'     //configuring username in Git Bash
+git config --global user.email 'eMail'     //configuring email in Git Bash
+git config --list     //details about the user
+git config propertyName     //property details
+git init     //initializing a folder into a git repository
+rm -rf .git     //reverse of git init
+git add .     //adding all the files to the staging area
+git add 'fileName'     //adding files to the staging area
+git status     //shows the files or folders that have been modified
+git commit -m 'commitMessage'     //commiting the changes with a message
+git commit -am 'commitMessage'     //directly commiting to the repository; no staging area
+git log     //shows the commit details
+git rm 'fileName'     //removing a file
+git mv 'fileName1' 'fileName2 or folderName or folderName/someOtherName'     //renaming
+git checkout -- 'fileName'  //undo the changes in a file, if modified
+git reset HEAD 'fileName'   //unstaging a file
+git checkout commitNumber -- 'fileName'     //going back to a particular commit time
+git remote add 'nickName' 'URLofTheRepo'     //making a remote before publishing to GitHub
+git remote     //shows the remote name(s)
+git push -u 'nickName' master     //pushing to GitHub

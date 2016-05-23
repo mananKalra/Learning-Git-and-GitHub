@@ -1,0 +1,22 @@
+cd ~
+clear
+ls
+ls -la
+git config --global user.name 'firstName lastName'
+git config --global user.email 'eMail'
+git config --list
+git config propertyName
+git init
+git add 'fileName'
+git status
+git commit -m 'commitMessage'
+git commit -am 'commitMessage'
+git log
+git rm 'fileName'
+git mv 'fileName1' 'fileName2 or folderName or folderName/someOtherName'
+git checkout -- 'fileName'  //undo, if modified
+git reset HEAD 'fileName'   //unstaging
+git checkout commitNumber -- 'fileName'
+git remote add 'nickName' 'URLofTheRepo'
+git remote
+git push -u 'nickName' master
